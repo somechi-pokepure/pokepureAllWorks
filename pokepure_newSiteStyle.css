@@ -167,7 +167,7 @@ text-align: center;
     align-items: center;
 
   }
-  #acd-menu:checked~.acd-list li, #acd-menu2:checked~.acd-list2 li {
+  #acd-menu:checked~.acd-list li, #acd-menu2:checked~.acd-list2 li, #acd-menu3:checked~.acd-list3 li{
 
     border-top:2px dashed #fff;
     border-bottom:2px dashed #fff;
@@ -213,7 +213,10 @@ text-align: center;
 }
 
 
-h3 {
+
+
+
+h2 {
 
 text-align: center;
 
