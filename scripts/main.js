@@ -45,7 +45,7 @@ var workGameList = new Vue({
 
 		{ id: 0, text: 'I wanna travel Do or Die',
 		//URL:'./contents_I wanna/I_wanna_DoOrDie1.html' },
-		URL:'/pokepureAllWorks/contents_I wanna/I_wanna_DoOrDie1.html' },
+		URL:'/contents_I wanna/I_wanna_DoOrDie1.html' },
 		//サーバー上に挙げた時、ちゃんと階層が上手く表示されるようになる（絶対パス扱い）
 		//ローカルではできないので、ローカルサーバーを立てて実験する
 
