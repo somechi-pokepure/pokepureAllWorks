@@ -17,7 +17,10 @@ message:'Hello Vue!'
 Vue.component('game-list', {
 	props:['gamename'],
   // template: '<li>{{ todo.URL }}</li>'
-  //template:'<li> <a v-bind:href=" <!-- ここに入れたい -->  todo.URL"> {{todo.text}} </a> </li>'
+  //template:'<li> <a v-bind:href="'./contents_I wanna/' + gamename.URL"> {{gamename.text}} </a> </li>'
+
+
+
   template:'<li> <a v-bind:href="gamename.URL"> {{gamename.text}} </a> </li>'
 })
 
@@ -41,9 +44,13 @@ var workGameList = new Vue({
 		// 			URL:'URL'},
 
 		{ id: 0, text: 'I wanna travel Do or Die',
-		URL:　'./contents_I wanna/I_wanna_DoOrDie1.html' },
+		//URL:'./contents_I wanna/I_wanna_DoOrDie1.html' },
+		URL:'/pokepureAllWorks/contents_I wanna/I_wanna_DoOrDie1.html' },
+		//サーバー上に挙げた時、ちゃんと階層が上手く表示されるようになる（絶対パス扱い）
+		//ローカルではできないので、ローカルサーバーを立てて実験する
 
-		{ id: 1, 	text: 'I wanna celebrate the Second anniversary ~Dear よっしー☆彡~',
+
+		{ id: 1, text: 'I wanna celebrate the Second anniversary ~Dear よっしー☆彡~',
 		URL:'./contents_I wanna/I_wanna_2ndAnnivYosshi.html'},
 
 		{ id: 2, text: 'I wanna be the Blue coin mania saucer fulfill',
