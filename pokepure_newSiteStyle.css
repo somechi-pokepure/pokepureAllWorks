@@ -4,11 +4,47 @@ body{
 }
 
 @font-face{
-	font-family: TRTaishoMinStd-R;
-	src:url(./fonts/TRTaishoMinStd-R.otf);
+  font-family: TRTaishoMinStd-R;
+  src:url(/fonts/TRTaishoMinStd-R.otf);
 
 }
 
+.pageheader{
+  /*background-color:  #feefe5;*/
+  background-color:  #fad3db;
+  text-align: center;
+}
+
+.main-column{
+  background-color:  #ecf1f2;
+/*  margin: 5px 5px;
+padding:1% ;*/
+padding: 5px 5px;
+/*  margin: 5px 5px;*/
+
+}
+
+.side-column{
+
+ background-color:  #b9e5fb;
+  padding: 5px 5px;
+  /*margin: 5px 5px;*/
+  border-top: 10px double #4A5759;
+  text-align: center;
+
+}
+
+.pagefooter{
+
+    background-color:  #fad3db;
+  /*  margin: 5px 5px;*/
+  text-align: center;
+}
+
+   /* ▼ページレイアウト */
+.page-cover {
+    background-color:  #fad3db;
+  }
 
 
 
@@ -17,11 +53,24 @@ body{
 /* ======================================= */
 @media (min-width: 600px) and (max-width: 849px) {
 
+
+  .main-column{
+  /*  margin: 5px 5px;
+  padding:1% ;*/
+
+    margin: 5px 5px;
+
+  }
+
+
   /* ▼サイドカラムの装飾 */
   .side-column {
     text-align: center;   /* 内部のインラインブロックを中央に寄せる */
     padding: 1em 0.2em;   /* 上下に若干の余白を設ける */
+    margin: 5px 5px;
+
   }
+
   /* ▼サイドカラムの内側だけで各ボックスを2段組にする */
   .side-box {
     display: inline-block;  /* インラインブロック化 */
@@ -29,8 +78,8 @@ body{
     vertical-align: top;    /* 横並びのブロック間では上端を揃える */
     margin: 0;              /* 外側の余白をなくす */
     text-align: left;       /* ボックス内部は左寄せ */
-  }
 
+  }
 }
 
 /* ==================================== */
@@ -42,48 +91,73 @@ body{
   .page-cover {
     display: flex;       /* フレキシブルボックスでレイアウト */
     flex-direction: row; /* 横並びにする */
+/*  background-color:  #F7ACBC;*/
+    background-color:  #fad3db;
   }
 
   /* ▼メインカラムの装飾 */
   .main-column {
     order: 2; /* 2番目に表示 */
     width: 70%;
+    /*     padding: 5px 5px;*/
+    margin: 5px 5px;
+
   }
   /* ▼サイドカラムの装飾 */
   .side-column {
     order: 1; /* 1番目に表示 */
     width: 30%;
+
+    /*       padding: 5px 5px;*/
+    margin: 5px 5px;
+
   }
 
 }
 
 
-.Game_info{
-
-
-
-
+.Game_info h2 {
+  text-align: left;
 
 }
 
 
-.pageheader{
+.Game_info p {
+  text-align: left;
+  padding-left: 3rem;
+}
 
-  background-color:  #9d695a;
+
+h3{
+
+text-align: center;
+padding:  25px 5% 0px 5%;
+
+}
+
+.outlook_stage h4{
+  text-align: center;
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.outlook_stage p{
+  margin: 0 15%;
   text-align: center;
 }
 
-.main-column{
-  background-color: #d496a7;
-  padding:1% ;
+.Game_summary{
+  margin-left: calc(7% + 4px) ;
+  margin-right: 5%;
 }
 
-.side-column{
-  background-color: #78e0dc;
-  text-align: center;
+.Game_summary p{
+
+
+text-align: center;
+padding: 0 10%;
+
 
 }
-
 
 /*---------------------------------------------------
 
@@ -94,12 +168,14 @@ body{
   .menu-wrap { /* アコーディオンメニュー全体の幅を設定する */
     width: 95%;
     margin: 0 auto;
+    padding: 10px;
   }
 
   /* アコーディオンメニューの内容のうち、上位階層を設定する */
 
   .menu-wrap label {
     background-color: #333;
+/*    background-color:#6993cd;*/
     color: #fff;
     display: block;
     padding: 15px;
@@ -114,7 +190,7 @@ body{
 
   .menu-wrap ul {
     background-color:#4E4D48;
-    margin: 1em 0;
+    margin: 0 0;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -133,14 +209,14 @@ body{
     align-items: center;
 
   }
-  #acd-menu:checked~.acd-list li, #acd-menu2:checked~.acd-list2 li {
+  #acd-menu:checked~.acd-list li, #acd-menu2:checked~.acd-list2 li, #acd-menu3:checked~.acd-list3 li{
 
     border-top:2px dashed #fff;
     border-bottom:2px dashed #fff;
     height: 75px;
     /*white-space: normal;*/
 
-    line-height: 1;
+    line-height: 1; /* 行間設定 */
   }
   .menu-wrap label::before {
     display: inline-block;
@@ -164,7 +240,31 @@ body{
     color: red;
   }
 
-/*ここまで : side-menu-wrap関連,サイトメニュー(画面左)*/
+  /*ここまで : side-menu-wrap関連,サイトメニュー(画面左)*/
+
+
+  /* ステージカードのタイトルをホバーした時の色 */
+  .card a{
+    color:white;
+    text-shadow:black 1px 1px 0, black -1px -1px 0,/*右下、左上*/
+        black -1px 1px 0, black 1px -1px 0,/*右上、左下*/
+        black 0px 1px 0, black  0-1px 0,/*右、左*/
+        black -1px 0 0, black 1px 0 0;/*上、下*/
+  }
+
+  .card a:hover{
+    color:red;
+    text-shadow: black 0px 0px 5px;
+  }
+
+
+  h2 {
+
+    text-align: center;
+
+  }
+
+
 
 
 /*---------------------------------------------------
@@ -203,11 +303,11 @@ body{
 
    /*一本線のボーダー*/
 
-   margin-top: 5%;
+   margin-top: 1%;
    margin-left: calc(7% + 4px) ;
    margin-right: 5%;
-   margin-bottom: 5%;
+   margin-bottom: 1%;
    width: 85%;
-   border-top: solid 2px #000000;
+   border-top: solid 2px #ffcf00;
 
-}
+ }
