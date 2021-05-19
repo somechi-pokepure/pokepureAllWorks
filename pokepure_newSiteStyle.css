@@ -57,64 +57,31 @@ body{
 
 }
 
+
+.Game_info{
+
+
+
+
+
+}
+
+
 .pageheader{
 
-  background-color:  #feefe5;
-/*  margin: 5px 5px;*/
+  background-color:  #9d695a;
   text-align: center;
 }
 
 .main-column{
-  background-color:  #feefe5;
-  margin: 0 5px;
+  background-color: #d496a7;
   padding:1% ;
 }
 
 .side-column{
-  background-color:  #feefe5;
-  margin: 0 5px;
+  background-color: #78e0dc;
   text-align: center;
 
-
-}
-
-
-.Game_info p {
-
-padding-left: 6rem;
-
-
-}
-
-
-.outlook_stage h4{
-
-text-align: center;
-text-shadow: #FC0 1px 0 10px;
-
-
-}
-
-.outlook_stage p{
-
-margin: 0 10%;
-text-align: center;
-
-
-}
-
-
-
-
-
-
-.Game_summary{
-
-   margin-left: calc(7% + 4px) ;
-   margin-right: 5%;
-
-
-  
 }
 
 
@@ -127,7 +94,6 @@ text-align: center;
   .menu-wrap { /* アコーディオンメニュー全体の幅を設定する */
     width: 95%;
     margin: 0 auto;
-    padding: 10px;
   }
 
   /* アコーディオンメニューの内容のうち、上位階層を設定する */
@@ -148,7 +114,7 @@ text-align: center;
 
   .menu-wrap ul {
     background-color:#4E4D48;
-    margin: 0 0;
+    margin: 1em 0;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -167,14 +133,14 @@ text-align: center;
     align-items: center;
 
   }
-  #acd-menu:checked~.acd-list li, #acd-menu2:checked~.acd-list2 li, #acd-menu3:checked~.acd-list3 li{
+  #acd-menu:checked~.acd-list li, #acd-menu2:checked~.acd-list2 li {
 
     border-top:2px dashed #fff;
     border-bottom:2px dashed #fff;
     height: 75px;
     /*white-space: normal;*/
 
-    line-height: 1; /* 行間設定 */
+    line-height: 1;
   }
   .menu-wrap label::before {
     display: inline-block;
@@ -199,28 +165,6 @@ text-align: center;
   }
 
 /*ここまで : side-menu-wrap関連,サイトメニュー(画面左)*/
-
-
-/* ステージカードのタイトルをホバーした時の色 */
-.card a{
-  color:white;
-  text-shadow: black 0px 0px 5px;
-}
-
-.card a:hover{
-  color:red;
-   text-shadow: black 0px 0px 5px;
-}
-
-
-
-
-
-h2 {
-
-text-align: center;
-
-}
 
 
 /*---------------------------------------------------
@@ -264,6 +208,6 @@ text-align: center;
    margin-right: 5%;
    margin-bottom: 5%;
    width: 85%;
-   border-top: solid 2px #ffcf00;
+   border-top: solid 2px #000000;
 
 }
