@@ -1,39 +1,25 @@
 
 
-/*var app = new Vue({
-
-
-el:'#app',
-data:{
-
-message:'Hello Vue!'
-
-}
-
-}) */
-
-
-
 Vue.component('game-list', {
 	props:['gamename'],
-  // template: '<li>{{ todo.URL }}</li>'
-  //template:'<li> <a v-bind:href="'./contents_I wanna/' + gamename.URL"> {{gamename.text}} </a> </li>'
+	template:'<li> <a v-bind:href=" `/contents_Iwanna/${gamename.URL}` "> {{gamename.text}} </a> </li>'
+	//文字列組み込み：`/contents_I wanna${gamename.URL}`
+	//参考URL : https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Template_literals
 
-
-
-  template:'<li> <a v-bind:href="gamename.URL"> {{gamename.text}} </a> </li>'
+	//直接、相対パスを指定した場合の書き方。
+  	//template:'<li> <a v-bind:href="gamename.URL"> {{gamename.text}} </a> </li>'
 })
 
-/*<-- 入れたい内容 -->
+	/*<-- 入れたい内容 -->
 
-例）下記id 0,の「URL:　'./contents_I wanna/I_wanna_DoOrDie1.html' },」部分における
-「./contents_I wanna/」を、上の<!-- ここに入れたい -->部分に入れて、
-data内に書くURLを短くさせたい。
+	例）下記id 0,の「URL:　'./contents_I wanna/I_wanna_DoOrDie1.html' },」部分における
+	「./contents_I wanna/」を、上の<!-- ここに入れたい -->部分に入れて、
+	data内に書くURLを短くさせたい。
 
-理想↓
-./contents_I wanna/ + "todo,URL" 
+	理想↓
+	./contents_I wanna/ + "todo,URL" 
 
-*/
+	*/
 
 var workGameList = new Vue({
 	el: '#workGameList',
@@ -44,50 +30,52 @@ var workGameList = new Vue({
 		// 			URL:'URL'},
 
 		{ id: 0, text: 'I wanna travel Do or Die',
-		//URL:'./contents_I wanna/I_wanna_DoOrDie1.html' },
-		URL:'/contents_I wanna/I_wanna_DoOrDie1.html' },
-		//サーバー上に挙げた時、ちゃんと階層が上手く表示されるようになる（絶対パス扱い）
-		//ローカルではできないので、ローカルサーバーを立てて実験する
+			//直接相対パスを指定した場合の書き方。階層が繰り返されてしまうので、あまり良いとは言えない。
+			//URL:'./contents_I wanna/I_wanna_DoOrDie1.html' },
+
+		URL:'Iwanna_DoOrDie1.html' },
+			//サーバー上に挙げた時、ちゃんと階層が上手く表示されるようになる（絶対パス扱い）
+			//ローカルではできないので、ローカルサーバーを立てて実験する
 
 
 		{ id: 1, text: 'I wanna celebrate the Second anniversary ~Dear よっしー☆彡~',
-		URL:'./contents_I wanna/I_wanna_2ndAnnivYosshi.html'},
+		URL:'Iwanna_2ndAnnivYosshi.html'},
 
 		{ id: 2, text: 'I wanna be the Blue coin mania saucer fulfill',
-		URL:'./contents_I wanna/I_wanna_2ndAnnivYosshi.html' },
+		URL:'Iwanna_BlueCoinMania.html' },
 
 		{ id: 3, text:'I wanna recover the quality.',
-		URL:'./contents_I wanna/I_wanna_RecoverTheQuality.html'},
+		URL:'Iwanna_RecoverTheQuality.html'},
 
 		{ id: 4, text:'I wanna listen to electronic music',
-		URL:'./contents_I wanna/I_wanna_ListenToElectroMusic.html'},
+		URL:'Iwanna_ListenToElectroMusic.html'},
 
 		{ id: 5,text:'I wanna defeat the Surumeika',
-		URL:'./contents_I wanna/I_wanna_DefeatTheSurumeika.html'},
+		URL:'Iwanna_DefeatTheSurumeika.html'},
 
 		{ id: 6, text:'I wanna perotect one life',
-		URL:'./contents_I wanna/I_wanna_ProtectLife.html'},
+		URL:'Iwanna_ProtectLife.html'},
 
 		{ id: 7, text:'１時間制作アイワナ',
-		URL:'./contents_I wanna/I_wanna_OneHour.html'},
+		URL:'Iwanna_OneHour.html'},
 
 		{ id: 8, text:'I wanna recover the existance',
-		URL:'./contents_I wanna/I_wanna_RecoverTheExistance.html'},
+		URL:'Iwanna_RecoverTheExistance.html'},
 
 		{ id: 9, text:'I wanna travel do or die ~Into the many world~',
-		URL:'./contents_I wanna/I_wanna_DoOrDie2.html'},
+		URL:'Iwanna_DoOrDie2.html'},
 
 		{ id: 10, text:'I wanna be the rain',
-		URL:'./contents_I wanna/I_wanna_Rain.html'},
+		URL:'Iwanna_Rain.html'},
 
 		{ id: 11, text:'I wanna cut off Ring of fates.',
-		URL:'./contents_I wanna/I_wanna_RingOfFates.html'},
+		URL:'Iwanna_RingOfFates.html'},
 
 		{ id: 12, text:'I wanna continue Explorer',
-		URL:'./contents_I wanna/I_wanna_ContinueExplorer.html'},
+		URL:'Iwanna_ContinueExplorer.html'},
 
 		{ id: 13, text:'Lament Bitterly（共同制作）旧"discord makers2 JPside"',
-		URL:'URL'},
+		URL:'LamentBitterly.html'},
 
 		{ id: 14, text:'I wanna beat the Fenix',
 		URL:'URL'},
@@ -101,13 +89,9 @@ var workGameList = new Vue({
 		{ id: 17, text:'I wanna escape from colorless world',
 		URL:'URL'}
 
-	]}
+		]}
 
-})
-
-
-
-
+	})
 
 
 
