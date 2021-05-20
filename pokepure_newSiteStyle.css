@@ -130,19 +130,27 @@ padding: 5px 5px;
 
 h3{
 
-text-align: center;
-padding:  25px 5% 0px 5%;
+text-align: left;
+padding:  25px 0px 0px 15%;
+
+}
+
+.outlook_stage{
+
+padding: 0px 5% 0px 15%
+
 
 }
 
 .outlook_stage h4{
-  text-align: center;
+  text-align: left;
   text-shadow: #FC0 1px 0 10px;
+  padding: 0px 0% 0px 5%
 }
 
 .outlook_stage p{
   margin: 0 15%;
-  text-align: center;
+  text-align: left;
 }
 
 .Game_summary{
@@ -150,10 +158,15 @@ padding:  25px 5% 0px 5%;
   margin-right: 5%;
 }
 
+
+.Game_summary h3{
+padding-left: 10%;
+}
+
 .Game_summary p{
 
 
-text-align: center;
+text-align: left;
 padding: 0 10%;
 
 

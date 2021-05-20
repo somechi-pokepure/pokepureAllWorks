@@ -53,7 +53,7 @@ var workGameList = new Vue({
 		{ id: 5,text:'I wanna defeat the Surumeika',
 		URL:'Iwanna_DefeatTheSurumeika.html'},
 
-		{ id: 6, text:'I wanna perotect one life',
+		{ id: 6, text:'I wanna protect one life',
 		URL:'Iwanna_ProtectLife.html'},
 
 		{ id: 7, text:'１時間制作アイワナ',
@@ -93,9 +93,29 @@ var workGameList = new Vue({
 
 	})
 
+Vue.component('story-list', {
+	props:['storyname'],
+	template:'<li> <a v-bind:href=" `/contents_Story/${storyname.URL}` "> {{storyname.text}} </a> </li>'
+})
+
+var workStoryList = new Vue({
+	el: '#workStoryList',
+	data: {
+		storyList: [
+
+		// { id: n, text:'GameName',
+		// 			URL:'URL'},
+
+		{ id: 0, text: '蟲の棲む処(1)',
+
+		URL:'#' },
+		{ id: 1, text: 'シナリオライティング '+'「カワっているせかい」',
 
 
+		URL:'#' }
 
+	]}
 
+	})
 
 

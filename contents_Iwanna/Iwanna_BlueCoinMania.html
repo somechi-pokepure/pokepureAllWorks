@@ -90,9 +90,9 @@
 					<p>
 						アイワナ仮装制作大会(※1)に向けて制作＆提出した作品。<br>
 						各マップに配置された青コインを全部集めるとステージクリア。<br>
-
-
-						※1他の製作者の作風を真似し、参加者のうち誰がそのアイワナを制作したのかを当てる大会。今作ではレシギアさんの作風を真似ています。……他の方が制作していた作品と比べると、格段に見劣りしますね。
+						……他の方が制作していた作品と比べると、格段に見劣りしますね。<br>
+						<br>
+						※1.他の製作者の作風を真似し、参加者のうち誰がそのアイワナを制作したのかを当てる大会。今作ではレシギアさんの作風を真似ています。<br>
 
 
 
@@ -161,13 +161,13 @@
 
 
 					<p>
-						ステージに対するコメント
+						ステージ選択は、"jubeat"のUIをイメージしています。
 					</p>
 				</div>
 
 				<!-- Stage1 -->
 				<a id="Stage1" class="anchor"></a>
-				<h3>Stage 1 </h3>
+				<h3>（例） Stage:Blue coin original 1</h3>
 
 				<div class="outlook_stage">
 					<!-- <h4> ステージ見出し</h4> -->
@@ -180,7 +180,7 @@
 
 				<!-- Stage2 -->
 				<a id="Stage2" class="anchor"></a>
-				<h3>Stage 2</h3>
+				<h3>（例）Stage:I wanna be the GB</h3>
 
 				<div class="outlook_stage">
 					<!-- <h4> ステージ見出し</h4> -->
@@ -212,7 +212,7 @@
 
 
 
-				<a href="./index.html">トップへ</a>
+				<a href="/index.html">トップへ</a>
 				<h2>カテゴリー</h2>
 				<div class="side-box">
 					<!-- <ul class="globalmenu">
@@ -251,9 +251,17 @@
 						<label for="acd-menu2">小説</label>
 						<input type="checkbox" id="acd-menu2">
 						<ul class="acd-list2">
-							<li><a href="#">蟲の棲む処(1)</a></li>
-							<li><a href="#">シナリオライティング<br>
-							「カワっているせかい」</a></li>
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
 						</ul>
 					</div>
 

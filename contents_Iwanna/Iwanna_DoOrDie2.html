@@ -87,7 +87,7 @@
 				<div class="Game_summary">
 					<h3>ゲーム概要 </h3>
 					<p>
-						"I anna travel do or die"の2作目。<br>これまでに制作してきた作品の中で、１・２を争うほどお気に入りの作品。
+						"I wanna travel do or die"の2作目。<br>これまでに制作してきた作品の中で、１・２を争うほどお気に入りの作品。
 					</p>
 				</div>
 
@@ -224,7 +224,7 @@
 				<h3>Stage 2 "Lava and Ash"</h3>
 
 				<div class="outlook_stage">
-					<h4>噴火している火山を背景に、"溶岩と灰"が降っている世界。</h4>
+					<h4>噴火している火山と"溶岩と灰"が降っている世界。</h4>
 				
 
 				<p>
@@ -260,10 +260,10 @@
 				<h3>Stage 4 "Sunset , no traps"</h3>
 
 				<div class="outlook_stage">
-					<h4>　常に日没が近く、逆光により真っ暗な世界。</h4>
+					<h4>　常に日没が近く、逆光が射す世界。</h4>
 				
 
-				<p>　2010年に任天堂より発売された「ドンキーコングリターンズ」内に登場する"サンセット海岸"を見て、「こういう方法もあったのか」と感じたことがきっかけとなり制作しました。<br>
+				<p>2010年に任天堂より発売された「ドンキーコングリターンズ」内に登場する"サンセット海岸"を見て、「こういう方法もあったのか」と感じたことがきっかけとなり制作しました。<br>
 					BGMも合間ってなんとなく西洋的な雰囲気があるようにも感じますね。
 					<br>
 					<br>
@@ -293,15 +293,14 @@
 				<h3>Stage 6 "Blue jel and Orange jel"</h3>
 
 				<div class="outlook_stage">
-					<h4>乗ると跳ねる青いジェルとスピードの上がるオレンジのジェルがある世界。</h4>
+					<h4>特殊な２つのジェルに塗れた世界。</h4>
 				
 
 				<p>
-					　BGMとギミックから分かる通り、完全にPortal2が元ネタです。<br>
-
-					青ジェルに関して。
-					ver,1.0を公開してすぐ、青ジェルの使用が難しいと思ったので変更しています。作っている時は割とすんなりいけるんですけどね……。<br>
-					ところで、このステージの背景はフリー素材等ではなく、実は友人が撮った写真をそのまま使わせていただきました。
+					BGMとギミックから分かる通り、完全にPortal2が元ネタです。<br>
+					青ジェルに関して。<br>
+					　ver,1.0を公開してすぐ、青ジェルの使用が難しいと思ったので変更しています。作っている時は割とすんなりいけるんですけどね……。<br>
+					ところで、このステージの背景はフリー素材等ではなく、実は友人が撮った写真を使わせていただきました。
 					<br>
 					<br>
 					<br>
@@ -335,7 +334,7 @@
 					<h4>東洋の雲の上にある世界。</h4>
 				
 				<p> 
-					　このステージ名の由来として、Thinktec様の"Eastern horoscope"を引用しています。
+					このステージ名の由来として、Thinktec様の"Eastern horoscope"を引用しています。
 					このステージの着想自体はRayarkの音楽ゲーム"VOEZ"から得ていました(BGMと虹色のエフェクト)。<br>
 					乗った後は慣れると割れる、泡のようなオブジェクトのパーティクルについてはと
 
@@ -368,7 +367,7 @@
 
 
 
-				<a href="./index.html">トップへ</a>
+				<a href="/index.html">トップへ</a>
 				<h2>カテゴリー</h2>
 				<div class="side-box">
 					<!-- <ul class="globalmenu">
@@ -407,9 +406,17 @@
 						<label for="acd-menu2">小説</label>
 						<input type="checkbox" id="acd-menu2">
 						<ul class="acd-list2">
-							<li><a href="#">蟲の棲む処(1)</a></li>
-							<li><a href="#">シナリオライティング<br>
-							「カワっているせかい」</a></li>
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
 						</ul>
 					</div>
 

@@ -80,7 +80,7 @@
 
 
 
-				<a href="./index.html">トップへ</a>
+				<a href="/index.html">トップへ</a>
 				<h2>カテゴリー</h2>
 				<div class="side-box">
 					<!-- <ul class="globalmenu">
@@ -119,9 +119,21 @@
 						<label for="acd-menu2">小説</label>
 						<input type="checkbox" id="acd-menu2">
 						<ul class="acd-list2">
-							<li><a href="#">蟲の棲む処(1)</a></li>
-							<li><a href="#">シナリオライティング<br>
-							「カワっているせかい」</a></li>
+							
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
+
+
+
 						</ul>
 					</div>
 

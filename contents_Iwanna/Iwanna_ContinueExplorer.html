@@ -85,7 +85,7 @@
 				<div class="Game_summary">
 					<h3>ゲーム概要 </h3>
 					<p>
-						ちゃすおさん主催「アイワナ製作者コンテスト３」に向けて制作・提出した作品。<br>
+						ちゃすおさん主催「アイワナ製作者コンテスト３」に向けて制作・提出した作品。
 						総合３位の成績を収めることが出来ました。<br>
 						公開時に"Explorer"のスペルをミスしていたのとても恥ずかしい。
 
@@ -109,7 +109,7 @@
 								<img class="card-img" src="noone" alt="Card image">
 								<div class="card-img-overlay">
 									<!--<p class="card-text">I'm text that has a background image!</p>-->
-									<a href="#Stage1">Stage1 </a>
+									<a href="#Stage0">始まりの丘 </a>
 								</div>
 							</div>
 
@@ -121,7 +121,7 @@
 								<img class="card-img" src="noone" alt="Card image">
 								<div class="card-img-overlay">
 									<!--<p class="card-text">I'm text that has a background image!</p>-->
-									<a href="#Stage2">Stage2 </a>
+									<a href="#Stage1">遺跡前 </a>
 								</div>
 							</div>
 
@@ -133,7 +133,19 @@
 								<img class="card-img" src="noone" alt="Card image">
 								<div class="card-img-overlay">
 									<!--<p class="card-text">I'm text that has a background image!</p>-->
-									<a href="#Stage3">Stage3</a>
+									<a href="#Stage2">洞窟</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+
+							<div class="card">
+								<img class="card-img" src="noone" alt="Card image">
+								<div class="card-img-overlay">
+									<!--<p class="card-text">I'm text that has a background image!</p>-->
+									<a href="#Stage3">遺跡</a>
 								</div>
 							</div>
 
@@ -147,41 +159,59 @@
 				<div class="Edited_border_Nline_contents"></div>
 
 
+			<!-- Stage0 -->
+				<a id="Stage0" class="anchor"></a>
+				<h3>Stage 0 </h3>
+
+				<div class="outlook_stage">
+					<h4> ステージ見出し</h4>
+				
+
+				<p>
+					ステージに対するコメント
+				</p>
+				</div>
+
 			<!-- Stage1 -->
 				<a id="Stage1" class="anchor"></a>
 				<h3>Stage 1 </h3>
 
 				<div class="outlook_stage">
-					<p> ステージ見出し</p>
-				</div>
+					<h4> ステージ見出し</h4>
+				
 
 				<p>
 					ステージに対するコメント
 				</p>
+				</div>
 
 			<!-- Stage2 -->
 				<a id="Stage2" class="anchor"></a>
-				<h3>Stage 2 </h3>
+				<h3>Stage2</h3>
 
 				<div class="outlook_stage">
-					<p> ステージ見出し</p>
-				</div>
+					<h4> ステージ見出し</h4>
+				
 
 				<p>
 					ステージに対するコメント
 				</p>
+				</div>
 
-<!-- Stage3 -->
+			<!-- Stage3 -->
 				<a id="Stage3" class="anchor"></a>
-				<h3>Stag3</h3>
+				<h3>Stage3</h3>
 
 				<div class="outlook_stage">
-					<p> ステージ見出し</p>
-				</div>
+					<h4> ステージ見出し</h4>
+				
 
 				<p>
 					ステージに対するコメント
 				</p>
+				</div>
+
+
 
 			</div>
 		</div>
@@ -206,7 +236,7 @@
 
 
 
-				<a href="./index.html">トップへ</a>
+				<a href="/index.html">トップへ</a>
 				<h2>カテゴリー</h2>
 				<div class="side-box">
 					<!-- <ul class="globalmenu">
@@ -245,9 +275,17 @@
 						<label for="acd-menu2">小説</label>
 						<input type="checkbox" id="acd-menu2">
 						<ul class="acd-list2">
-							<li><a href="#">蟲の棲む処(1)</a></li>
-							<li><a href="#">シナリオライティング<br>
-							「カワっているせかい」</a></li>
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
 						</ul>
 					</div>
 

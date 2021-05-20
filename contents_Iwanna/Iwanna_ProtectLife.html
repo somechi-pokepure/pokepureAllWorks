@@ -187,7 +187,7 @@
 				<h3>Stage 1 </h3>
 
 				<div class="outlook_stage">
-					<h4> 作者：よっしー☆彡</h4>
+					<h4> Creator：よっしー☆彡</h4>
 				
 
 				<p>
@@ -201,7 +201,7 @@
 				<h3>Stage 2 </h3>
 
 				<div class="outlook_stage">
-					<h4> 作者：pokepure(マリオズキ)</h4>
+					<h4> Creator：pokepure(マリオズキ)</h4>
 			
 
 				<p>
@@ -214,7 +214,7 @@
 				<h3>Stage 3 </h3>
 
 				<div class="outlook_stage">
-					<h4> 作者：pokepure(マリオズキ)</h4>
+					<h4> Creator：pokepure(マリオズキ)</h4>
 				<p>
 					25階層目には、セーブなしにとって難関である「上下針」が……。
 				</p>
@@ -225,7 +225,7 @@
 				<h3>Stage 4 </h3>
 
 				<div class="outlook_stage">
-					<h4> 作者：pokepure(マリオズキ)</h4>
+					<h4> Creator：pokepure(マリオズキ)</h4>
 				<p>
 					陰鬱とした雰囲気のあるステージ
 				</p>
@@ -236,7 +236,7 @@
 				<h3>Stage 5 </h3>
 
 				<div class="outlook_stage">
-					<h4> 作者：pokepure(マリオズキ)</h4>
+					<h4> Creator：pokepure(マリオズキ)</h4>
 
 				<p>
 					とても目に悪いステージですね。
@@ -247,7 +247,7 @@
 				<h3>Boss </h3>
 
 				<div class="outlook_stage">
-					<h4> 作者：よっしー☆彡</h4>
+					<h4> Creator：よっしー☆彡</h4>
 	
 				<p>
 					ボスだけは作れなかったため、ここだけよっしー☆彡さんに頼みました。
@@ -278,7 +278,7 @@
 
 
 
-				<a href="./index.html">トップへ</a>
+				<a href="/index.html">トップへ</a>
 				<h2>カテゴリー</h2>
 				<div class="side-box">
 					<!-- <ul class="globalmenu">
@@ -317,9 +317,17 @@
 						<label for="acd-menu2">小説</label>
 						<input type="checkbox" id="acd-menu2">
 						<ul class="acd-list2">
-							<li><a href="#">蟲の棲む処(1)</a></li>
-							<li><a href="#">シナリオライティング<br>
-							「カワっているせかい」</a></li>
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
 						</ul>
 					</div>
 

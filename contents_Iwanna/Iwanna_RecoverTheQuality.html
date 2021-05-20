@@ -89,7 +89,7 @@
 					<h3>ゲーム概要 </h3>
 					<p>
 						"recover"シリーズ1作目。<br>
-						作品の「質(=Quality)」に対して自虐をするために制作。
+						自身が制作してきた作品の「質(=Quality)」に対しての自虐を込めた作品。
 					</p>
 				</div>
 
@@ -141,7 +141,7 @@
 				
 
 				<p>
-					白と黒。そしてプレイヤーが灰色。虚無の世界。
+					白、黒、灰色。そこは虚無の世界。
 				</p>
 
 </div>
@@ -169,7 +169,7 @@
 
 
 
-				<a href="./index.html">トップへ</a>
+				<a href="/index.html">トップへ</a>
 				<h2>カテゴリー</h2>
 				<div class="side-box">
 					<!-- <ul class="globalmenu">
@@ -208,9 +208,17 @@
 						<label for="acd-menu2">小説</label>
 						<input type="checkbox" id="acd-menu2">
 						<ul class="acd-list2">
-							<li><a href="#">蟲の棲む処(1)</a></li>
-							<li><a href="#">シナリオライティング<br>
-							「カワっているせかい」</a></li>
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
 						</ul>
 					</div>
 
