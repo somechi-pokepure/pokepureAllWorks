@@ -29,7 +29,11 @@ var workGameList = new Vue({
 		// { id: n, text:'GameName',
 		// 			URL:'URL'},
 
-		{ id: 0, text: 'I wanna travel Do or Die',
+		{ id: 0, text: 'Save_Fox（仮題）',
+
+		URL:'SaveFox.html' },
+
+			{id: 0, text: 'I wanna travel Do or Die',
 			//直接相対パスを指定した場合の書き方。階層が繰り返されてしまうので、あまり良いとは言えない。
 			//URL:'./contents_I wanna/I_wanna_DoOrDie1.html' },
 
@@ -77,13 +81,13 @@ var workGameList = new Vue({
 		{ id: 13, text:'Lament Bitterly（共同制作）旧"discord makers2 JPside"',
 		URL:'LamentBitterly.html'},
 
-		{ id: 14, text:'I wanna beat the Fenix',
+		{ id: 14, text:'I wanna beat the Fenix（共同制作）',
 		URL:'URL'},
 
-		{ id: 15, text:'I Wanna Kill The Medley',
+		{ id: 15, text:'I Wanna Kill The Medley（共同制作）',
 		URL:'URL'},
 
-		{ id: 16, text:'I wanna defeat the Twitter Makers',
+		{ id: 16, text:'I wanna defeat the Twitter Makers（共同制作）',
 		URL:'URL'},
 
 		{ id: 17, text:'I wanna escape from colorless world',
