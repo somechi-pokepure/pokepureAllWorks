@@ -112,11 +112,11 @@ var workStoryList = new Vue({
 
 		{ id: 0, text: '蟲の棲む処(1)',
 
-		URL:'#' },
+		URL:'Story_mushi1.html' },
 		{ id: 1, text: 'シナリオライティング '+'「カワっているせかい」',
 
 
-		URL:'#' }
+		URL:'Story_Shinarai.html' }
 
 	]}
 
