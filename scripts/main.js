@@ -110,7 +110,7 @@ var workStoryList = new Vue({
 		// { id: n, text:'GameName',
 		// 			URL:'URL'},
 
-		{ id: 0, text: '蟲の棲む処(1)',
+		{ id: 0, text: '糸に囚われた少女たち_1',
 
 		URL:'Story_mushi1.html' },
 		{ id: 1, text: 'シナリオライティング '+'「カワっているせかい」',
