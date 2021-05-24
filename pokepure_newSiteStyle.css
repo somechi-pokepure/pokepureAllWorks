@@ -172,6 +172,35 @@ padding: 0 10%;
 
 }
 
+
+  h3 {
+
+    text-align: center;
+
+  }
+
+.wrap {
+  text-align: center;
+}
+.youtube {
+  max-width: 100%;
+}
+
+p{
+  margin: 0 15%;
+  text-align: left;
+}
+
+h4{      text-align: center; }
+
+iframe[src$=".pdf"]{
+
+width:100%;
+height:80vh;
+
+}
+
+
 /*---------------------------------------------------
 
   ここから : side-menu-wrap関連,サイトメニュー(画面左)
