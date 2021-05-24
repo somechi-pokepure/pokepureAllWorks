@@ -152,77 +152,106 @@
 		<!-- ▲メインを作るブロック -->
 		<!-- ====================== -->
 
-		<!-- ====================== -->
+<!-- ====================== -->
 		<!-- ▼サイドを作るブロック -->
 		<!-- ====================== -->
 		<div class="side-column">
 
-
-			<div class="side-box">
+			<!-- 		<div class="side-box"> -->
 				<!-- <a href="https://somechi-pokepure.github.io/pokepureAllWorks/index.html">トップへ</a> -->
+				<!-- <a href="./index.html">トップへ</a> -->
+				<!-- 				</div> -->
+
+
+
+
 				<a href="/index.html">トップへ</a>
-			</div>
-
-			<div class="side-box">
 				<h2>カテゴリー</h2>
+				<div class="side-box">
+					<!-- <ul class="globalmenu">
+						<li><a href="sample2columnlayout-a.html">制作アイワナ</a></li>
+						<li><a href="sample2columnlayout-b.html">小説</a></li>
+						<li><a href="sample2columnlayout-c.html" class="here">その他</a></li>
+					</ul> -->
 
-				<div class="menu-wrap">
+					<div class="menu-wrap">
 
-					<label for="acd-menu">制作ゲーム（公開順）</label>
-					<input type="checkbox" id="acd-menu">
-					<ul class="acd-list">
+						<label for="acd-menu">制作ゲーム（公開順）</label>
+						<input type="checkbox" id="acd-menu">
+						<ul class="acd-list">
 
-						<!-- ゲームリスト -->
-						<div id="workGameList">
+							<!-- ゲームリスト -->
+							<div id="workGameList">
 
-							<game-list
-							v-for="game in gameList"
-							v-bind:gamename="game"
-							v-bind:key="game.id"
-							></game-list>
+								<game-list
+								v-for="game in gameList"
+								v-bind:gamename="game"
+								v-bind:key="game.id"
+								></game-list>
 
-						</div>
-						<script src="/scripts/main.js"></script>
+							</div>
+							<script src="/scripts/main.js"></script>
 
-					</ul>
-
-					<label for="acd-menu2">小説</label>
-					<input type="checkbox" id="acd-menu2">
-					<ul class="acd-list2">
-						<li><a href="#">蟲の棲む処(1)</a></li>
-						<li><a href="#">シナリオライティング<br>
-						「カワっているせかい」</a></li>
-					</ul>
-
-					<label for="acd-menu3">壁紙</label>
-					<input type="checkbox" id="acd-menu3">
-					<ul class="acd-list3">
-							<li><a href="/contents_PaperWall/fig_Lazy.html">fig.Lazy</a></li>
-							<li><a href="/contents_PaperWall/fig_Oblivion.html">fig.Oblivion</a></li>
-					</ul>
-
-
+						</ul>
+					</div>
 
 				</div>
+
+
+				<div class="side-box">
+
+					<div class="menu-wrap">
+						<label for="acd-menu2">小説</label>
+						<input type="checkbox" id="acd-menu2">
+						<ul class="acd-list2">
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
+						</ul>
+					</div>
+
+				</div>
+
+
+
+				<div class="side-box">
+
+					<div class="menu-wrap">
+						<label for="acd-menu3">壁紙</label>
+						<input type="checkbox" id="acd-menu3">
+						<ul class="acd-list3">
+							<li><a href="/contents_PaperWall/fig_Lazy.html">fig.Lazy</a></li>
+							<li><a href="/contents_PaperWall/fig_Oblivion.html">fig.Oblivion</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+
+
+				
+
 			</div>
 
+<!-- 	<div class="side-box">
+		<h2>CSS</h2>
+		<p>
+		</p>
+	</div> -->
 
-
-
-
-
-<!-- 			<div class="side-box">
-				<h2>パターン</h2>
-				<p>
-				</p>
-			</div> -->
-
-
-
-		</div>
-		<!-- ====================== -->
-		<!-- ▲サイドを作るブロック -->
-		<!-- ====================== -->
+</div>
+</div>
+<!-- ====================== -->
+<!-- ▲サイドを作るブロック -->
+<!-- ====================== -->
 
 	</div>
 	<!-- ======================= -->
