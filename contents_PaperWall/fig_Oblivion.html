@@ -20,6 +20,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 
+
+	<!-- Vue.JS CDN(開発バージョン) -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<!--  サイト制作の参考：https://allabout.co.jp/gm/gc/463388/#aa463388responsive-columns -->
 
 
@@ -48,15 +51,15 @@
 		<!-- ====================== -->
 		<div class="main-column">
 
-		<div class="main-box">
+			<div class="main-box">
 				<h2>fig.Oblivion</h2>
 				<h2>~ 無意識・忘却 ~</h2>
 
-					<img src=".././contents_PaperWall/fig_Oblivion.png" width="100%" height="auto">
-						
-					<p>	1.画像を右クリック<br>
-						2.別名で画像を保存(Mac)<br>
-						&ensp; 名前をつけて画像を保存(Windows)</p>
+				<img src=".././contents_PaperWall/fig_Oblivion.png" width="100%" height="auto">
+
+				<p>	1.画像を右クリック<br>
+					2.別名で画像を保存(Mac)<br>
+				&ensp; 名前をつけて画像を保存(Windows)</p>
 				
 			</div>
 
@@ -71,94 +74,110 @@
 		<!-- ====================== -->
 		<div class="side-column">
 
-			<div class="side-box">
+			<!-- 		<div class="side-box"> -->
 				<!-- <a href="https://somechi-pokepure.github.io/pokepureAllWorks/index.html">トップへ</a> -->
-				<a href="../index.html">トップへ</a>
-			</div>
+				<!-- <a href="./index.html">トップへ</a> -->
+				<!-- 				</div> -->
 
 
 
-			<div class="side-box">
+
+				<a href="/index.html">トップへ</a>
 				<h2>カテゴリー</h2>
+				<div class="side-box">
+					<!-- <ul class="globalmenu">
+						<li><a href="sample2columnlayout-a.html">制作アイワナ</a></li>
+						<li><a href="sample2columnlayout-b.html">小説</a></li>
+						<li><a href="sample2columnlayout-c.html" class="here">その他</a></li>
+					</ul> -->
 
-				<!-- <ul class="globalmenu">
-					<li><a href="sample2columnlayout-a.html">制作アイワナ</a></li>
-					<li><a href="sample2columnlayout-b.html">小説</a></li>
-					<li><a href="sample2columnlayout-c.html" class="here">その他</a></li>
-				</ul> -->
+					<div class="menu-wrap">
 
-				<div class="menu-wrap">
+						<label for="acd-menu">制作ゲーム（公開順）</label>
+						<input type="checkbox" id="acd-menu">
+						<ul class="acd-list">
 
-					<label for="acd-menu">制作アイワナ（公開順）</label>
-					<input type="checkbox" id="acd-menu">
-					<ul class="acd-list">
-						<li><a href=".././contents_I wanna/I_wanna_DoOrDie1.html">I wanna travel Do or Die</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_2ndAnnivYosshi.html">I wanna celebrate the Second anniversary ~Dear よっしー☆彡~</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_BlueCoinMania.html">I wanna be the Blue coin mania saucer fulfill</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_RecoverTheQuality.html">I wanna recover the quality.</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_ListenToElectroMusic.html">I wanna listen to electronic music</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_DefeatTheSurumeika.html">I wanna defeat the Surumeika</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_ProtectLife.html">I wanna perotect one life</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_OneHour.html">１時間制作アイワナ</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_RecoverTheExistance.html">I wanna recover the existance</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_DoOrDie2.html">I wanna travel do or die <br>~Into the many world~</a></li> 
-						<li><a href=".././contents_I wanna/I_wanna_Rain.html">I wanna be the rain（制作開始は2015）</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_RingOfFates.html">I wanna cut off Ring of fates.</a></li>
-						<li><a href=".././contents_I wanna/I_wanna_ContinueExplorer.html">I wanna continue Explorer</a></li>
-						<li><a href=".././contents_I wanna/LamentBitterly.html">Lament Bitterly（共同制作）_ディスメJP2用だったやつの改変</a></li>
+							<!-- ゲームリスト -->
+							<div id="workGameList">
 
+								<game-list
+								v-for="game in gameList"
+								v-bind:gamename="game"
+								v-bind:key="game.id"
+								></game-list>
 
+							</div>
+							<script src="/scripts/main.js"></script>
 
-						<li><a href="#">I wanna beat the Fenix</a></li>
-						<li><a href="#">I Wanna Kill The Medley</a></li>
-						<li><a href="#">I wanna defeat the Twitter Makers</a></li>
-						<li><a href="#">I wanna escape from colorless world</a></li>
-
-
-
-
-					</ul>
-
-					<label for="acd-menu2">小説</label>
-					<input type="checkbox" id="acd-menu2">
-					<ul class="acd-list2">
-						<li><a href="#">蟲の棲む処(1)</a></li>
-						<li><a href="#">シナリオライティング<br>
-						「カワっているせかい」</a></li>
-					</ul>
-
-					<label for="acd-menu3">壁紙</label>
-					<input type="checkbox" id="acd-menu3">
-					<ul class="acd-list3">
-						<li><a href=".././contents_PaperWall/fig_Lazy.html">fig.Lazy</a></li>
-						<li><a href=".././contents_PaperWall/fig_Oblivion.html">fig.Oblivion</a></li>
-					</ul>
-
-
+						</ul>
+					</div>
 
 				</div>
 
+
+				<div class="side-box">
+
+					<div class="menu-wrap">
+						<label for="acd-menu2">小説</label>
+						<input type="checkbox" id="acd-menu2">
+						<ul class="acd-list2">
+							<!-- 小説リスト -->
+							<div id="workStoryList">
+
+								<story-list
+								v-for="story in storyList"
+								v-bind:storyname="story"
+								v-bind:key="story.id"
+								></story-list>
+
+							</div>
+							<script src="/scripts/main.js"></script>
+						</ul>
+					</div>
+
+				</div>
+
+
+
+				<div class="side-box">
+
+					<div class="menu-wrap">
+						<label for="acd-menu3">壁紙</label>
+						<input type="checkbox" id="acd-menu3">
+						<ul class="acd-list3">
+							<li><a href="/contents_PaperWall/fig_Lazy.html">fig.Lazy</a></li>
+							<li><a href="/contents_PaperWall/fig_Oblivion.html">fig.Oblivion</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+
+
+				
+
 			</div>
 
-			<div class="side-box">
-				<h2>CSS</h2>
-				<p>
-				</p>
-			</div>
+<!-- 	<div class="side-box">
+		<h2>CSS</h2>
+		<p>
+		</p>
+	</div> -->
 
-		</div>
-		<!-- ====================== -->
-		<!-- ▲サイドを作るブロック -->
-		<!-- ====================== -->
+</div>
+</div>
+<!-- ====================== -->
+<!-- ▲サイドを作るブロック -->
+<!-- ====================== -->
 
-	</div>
-	<!-- ======================= -->
-	<!-- ▲2カラムレイアウト領域 -->
-	<!-- ======================= -->
+</div>
+<!-- ======================= -->
+<!-- ▲2カラムレイアウト領域 -->
+<!-- ======================= -->
 
-	<div class="pagefooter">
-		<p>2021年 4月3日</p>
-	</div>
+<div class="pagefooter">
+	<p>2021年 4月3日</p>
+</div>
 
 </body>
 </html>
