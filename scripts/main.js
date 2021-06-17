@@ -79,19 +79,20 @@ var workGameList = new Vue({
 		URL:'Iwanna_ContinueExplorer.html'},
 
 		{ id: 13, text:'Lament Bitterly（共同制作）旧"discord makers2 JPside"',
-		URL:'LamentBitterly.html'},
+		URL:'LamentBitterly.html'}
+		// ,
 
-		{ id: 14, text:'I wanna beat the Fenix（共同制作）',
-		URL:'URL'},
+		// { id: 14, text:'I wanna beat the Fenix（共同制作）',
+		// URL:'URL'},
 
-		{ id: 15, text:'I Wanna Kill The Medley（共同制作）',
-		URL:'URL'},
+		// { id: 15, text:'I Wanna Kill The Medley（共同制作）',
+		// URL:'URL'},
 
-		{ id: 16, text:'I wanna defeat the Twitter Makers（共同制作）',
-		URL:'URL'},
+		// { id: 16, text:'I wanna defeat the Twitter Makers（共同制作）',
+		// URL:'URL'},
 
-		{ id: 17, text:'I wanna escape from colorless world',
-		URL:'URL'}
+		// { id: 17, text:'I wanna escape from colorless world',
+		// URL:'URL'}
 
 		]}
 
